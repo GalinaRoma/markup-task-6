@@ -1,0 +1,276 @@
+.page
+{
+    display: grid;
+    grid-template-columns: 18% 24% 24% 24% 10%;
+    grid-template-areas: 'loca sett sett sett mail'
+        'loca news news yaAd mail'
+        'labe sear sear sear mail'
+        'labe imgA imgA imgA mail'
+        'labe wid1 wid2 wid3 mail';
+    padding: 20px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #c00;
+}
+
+body
+{
+    margin: 0;
+    font: 500 13px Arial;
+}
+
+ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+li
+{
+    margin-bottom: 10px;
+}
+
+.schedules
+{
+    list-style: none;
+}
+
+h2
+{
+    margin: 26px 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0054b9;
+}
+
+.settings > input,
+.jokes > input
+{
+    display: none;
+}
+
+.news > h2
+{
+    margin: 14px 0;
+}
+
+.searchBox
+{
+    width: 80%;
+    height: 20px;
+    border: 1px solid #faea04;
+}
+
+.searchButton
+{
+    width: 10%;
+    height: 24px;
+    margin: 10px 0 10px -5px;
+    border: 0;
+    background: #faea04;
+}
+
+.searchExample
+{
+    color: #c2c0c0;
+}
+
+.widget1 div,
+.widget2 div,
+.widget3 div
+{
+    margin-bottom: 10px;
+}
+
+.widget1 .joke1
+{
+    margin-bottom: 50px;
+}
+
+.elementsGrey
+{
+    color: #c2c0c0;
+    font-size: 12px;
+}
+
+.lessOpacity
+{
+    opacity: .6;
+}
+
+.blueElement
+{
+    color: #0054b9;
+}
+
+.boldElement
+{
+    font-weight: 600;
+    color: #000;
+}
+
+.horizontalElement
+{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.lessOpacity:hover
+{
+    opacity: 1;
+}
+
+label[for='settings']:hover
+{
+    color: #c00;
+}
+
+.imageAdv
+{
+    width: 90%;
+}
+
+.widImage
+{
+    width: 18px;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.label::first-letter,
+.mail::first-letter
+{
+    color: #f00;
+}
+
+.taxiLogoImage
+{
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.carNewsBigWrap
+{
+    height: 180px;
+    position: relative;
+}
+
+.carNewsWrap
+{
+    overflow: auto;
+    height: 180px;
+}
+
+.carNewsWrap:before,
+.carNewsWrap:after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}
+
+.carNewsWrap::before
+{
+    top: 0;
+    background: linear-gradient(to bottom, #fff, rgba(0, 0, 0, 0));
+}
+
+.carNewsWrap::after
+{
+    background: linear-gradient(to top, #fff, rgba(0, 0, 0, 0));
+    top: 130px;
+}
+
+.carNewsWrap::-webkit-scrollbar
+{
+    display: none;
+}
+
+.location
+{
+    grid-area: loca;
+}
+
+.settings
+{
+    grid-area: sett;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.mail
+{
+    min-height: 40px;
+    height: 40px;
+    box-shadow: 1px 1px 10px #c2c0c0;
+    padding: 10px;
+    grid-area: mail;
+}
+
+.mail > span
+{
+    display: block;
+}
+
+.label
+{
+    grid-area: labe;
+    text-align: right;
+    font-size: 36px;
+    padding-right: 20px;
+    font-stretch: condensed;
+}
+
+.news
+{
+    grid-area: news;
+}
+
+.yaAdvertising
+{
+    grid-area: yaAd;
+    text-align: center;
+    width: 70%;
+    margin-top: 14px;
+}
+
+.yaAdvertising > h2
+{
+    width: 80%;
+    margin: auto;
+}
+
+.searching
+{
+    grid-area: sear;
+    margin: 20px 0 16px;
+}
+
+.imageAdvertising
+{
+    grid-area: imgA;
+}
+
+.widget1
+{
+    grid-area: wid1;
+}
+
+.widget2
+{
+    grid-area: wid2;
+}
+
+.widget3
+{
+    grid-area: wid3;
+}

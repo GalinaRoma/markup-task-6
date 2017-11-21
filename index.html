@@ -3,7 +3,166 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="page">
+        <div class="location">
+            <a class="elementsGrey" href="https://yandex.ru/maps/54/yekaterinburg/" target="blank">
+                <span class="fa fa-location-arrow elementsGrey"></span> Екатеринбург</a>
+        </div>
+        <div class="label">
+            <img src="img/logo_ya.svg" alt="Логотип яндекса">
+        </div>
+        <div class="settings">
+            <input type="checkbox" id="settings">
+            <label for="settings">Настройки</label>
+        </div>
+        <section class="news">
+            <h2 class="horizontalElement"><a href="#">Сейчас в СМИ</a></h2>
+            <h2 class="lessOpacity horizontalElement"><a href="#">в Екатеринбурге</a></h2>
+            <span class="elementsGrey horizontalElement">20 ноября, понедельник 21:35</span>
+            <ul>
+                <li>Федеральное собрание подписало закон о бесплатном мороженом</li>
+                <li>В России откроют первый Disneyland</li>
+                <li>Правительство РФ отдадут 10 миллионов рублей на строительство 
+                    приютов для бездомных животных</li>
+                <li>В Кремле идут приготовления к самой главной ёлке страны</li>
+                <li>Новогодние праздники хотят увеличить</li>
+                <li>Ледовый городок в Екатеринбурге признали самым красивым в мире</li>
+            </ul>
+            <ul>
+                <li class="horizontalElement"><span class="boldElement">USD</span> 
+                    ЦБ 59,27 <span class="elementsGrey">-0,36</span></li>
+                <li class="horizontalElement"><span class="boldElement">EUR</span> 
+                    ЦБ 69,67 <span class="elementsGrey">-0,69</span></li>
+                <li class="horizontalElement"><span class="boldElement">НЕФТЬ</span> 
+                    61,74 <span class="elementsGrey">-1,59%</span></li>
+            </ul>
+        </section>
+        <section class="yaAdvertising">
+            <img class="taxiLogoImage" src="img/ya_taxi.png" alt="Лого Яндекс.такси">
+            <h2><a href="#">Скидка на 100 поездок в Яндекс.Такси</a></h2>
+            Промокод: ja007m
+        </section>
+        <div class="searching">
+            <a class="horizontalElement blueElement" href="#">Видео</a>
+            <a class="horizontalElement blueElement" href="#">Картинки</a>
+            <a class="horizontalElement blueElement" href="#">Новости</a>
+            <a class="horizontalElement blueElement" href="#">Карты</a>
+            <a class="horizontalElement blueElement" href="#">Маркет</a>
+            <a class="horizontalElement blueElement" href="#">Переводчик</a>
+            <a class="horizontalElement blueElement" href="#">Музыка</a>
+            <a class="horizontalElement blueElement" href="#">ещё</a>
+            <form>
+                <input class="searchBox" type="text" maxlength="400">
+                <input class="searchButton" type="button" value="Найти">
+            </form>
+            <div>
+                Найдется всё. Например, 
+                <a class="searchExample" href="#">розовый слон</a>
+            </div>
+        </div>
+        <div class="imageAdvertising">
+            <img class="imageAdv" src="img/imgAdv.gif" alt="Advertising">
+        </div>
+        <div class="widget1">
+            <section class="visited">
+                <h2><a href="#">Посещаемое</a></h2>
+                <div><span class="boldElement">Маркет</span> - китайская распродажа</div>
+                <div><span class="boldElement">Авто.ру</span> - Туссан третьей серии</div>
+                <div><span class="boldElement">Недвижимость</span> - продажа студии</div>
+                <div><span class="boldElement">Работа</span> - программистом</div>
+                <div><span class="boldElement">Здоровье</span> - врач на связи</div>
+                <div><span class="boldElement">Коллекции</span> - как мелировать волосы</div>
+                <div><span class="boldElement">Авиабилеты</span> - из Екатеринбурга</div>
+            </section>
+            <section class="jokes">
+                <h2><a href="#">Лучшие анекдоты</a></h2>
+                <div class="joke1">Раздел: <a class="blueElement" href="#">медицинские</a><br>
+                - Вас лечить хорошо или бесплатно?
+                </div>
+                <input type="button" id="moveJoke" value="joke">
+                <label for="moveJoke">
+                        <span class="fa fa-repeat blueElement"></span>
+                        <a class="blueElement" href="">Показать еще</a>
+                </label>
+            </section>
+        </div>
+        <div class="widget2">
+            <section class="tvShow">
+                <h2 class="horizontalElement"><a href="#">Телепрограмма</a></h2>
+                <img class="teleShow horizontalElement widImage" src="img/teleShow.png" 
+                    alt="Лого телепрограммы">
+                <div>16:00 Орёл и Решка <span class="elementsGrey">Пятница</span></div>
+                <div>16:30 Ревизорро <span class="elementsGrey">Пятница</span></div>
+                <div>16:30 Реальные пацаны <span class="elementsGrey">ТНТ</span></div>
+                <div>16:30 Новости <span class="elementsGrey">Россия1</span></div>
+                <div>16:30 Финес и Ферб <span class="elementsGrey">Disney</span></div>
+            </section>
+            <section class="carNews">
+                <h2><a href="#">Автомобильные новости</a></h2>
+                <div class="carNewsBigWrap">
+                    <div class="carNewsWrap">
+                        <div>Прочитать всю историю Corvette 
+                            <span class="elementsGrey">13:00</span></div>
+                        <div>Правительство поддержало законопроект о регистрации машиномест 
+                            <span class="elementsGrey">12:12</span></div>
+                        <div>Обзор нового Mitsubishi, за которым выстроилась очередь
+                            <span class="elementsGrey">12:01</span></div>
+                        <div>Лады оснастят системой управления со смартфона
+                            <span class="elementsGrey">11:40</span></div>
+                        <div>В Китае представили спорткар с двигателем от Focus RS
+                            <span class="elementsGrey">11:30</span></div>
+                        <div>Священник отчитал прихожан, а они заставили его продать Porshe
+                            <span class="elementsGrey">11:09</span></div>
+                        <div>Какие автомобили будут популярны в новом 2018 году
+                            <span class="elementsGrey">11:00</span></div>
+                    </div>
+                </div>    
+            </section>
+        </div>
+        <div class="widget3">
+            <section class="weather">
+                <h2 class="horizontalElement"><a href="#">Погода</a></h2>
+                <a class="horizontalElement boldElement" href="https://yandex.ru/pogoda/yekaterinburg">
+                <img class="widImage" src="img/weather.svg" alt="weather">−2 °C
+                </a>
+                <p>Вечер -5, ночь -7</p>
+            </section>
+            <section class="trafficJams">
+                <h2 class="horizontalElement"><a href="#">Пробки</a></h2>
+                <a class="horizontalElement boldElement">
+                    <span class="b-ico traffic__icon b-ico-traffic-gn"></span>
+                    <img class="widImage" src="img/traffic.png" alt="trafficJam">7 баллов
+                </a>
+                <p>Движение затруднено</p>
+            </section>
+            <section class="cityMap">
+                <h2><a href="#">Карта Екатеринбурга</a></h2>
+                <ul class="schedules">
+                    <li class="horizontalElement boldElement">Такси</li>
+                    <li class="horizontalElement boldElement">Расписание</li>
+                    <li class="boldElement">Междугородние автобусы</li>
+                </ul>
+            </section>
+            <section class="poster">
+                <h2><a href="#">Афиша</a></h2>
+                <div>Здравствуй, папа, Новый год! <span class="elementsGrey">премьера в чт</span>
+                </div>
+                <div>Тор: Рагнарёк <span class="elementsGrey">фэнтези</span></div>
+                <div>Лига справедливости <span class="elementsGrey">фантастика</span></div>
+                <div>Последний богатырь <span class="elementsGrey">приключения</span></div>
+                <div>Убийство в Восточном экспрессе <span class="elementsGrey">драма</span></div>
+                <div class="boldElement">Концерты — Каста</div>
+            </section>
+        </div>
+        <div class="mail">
+            <span class="boldElement">GalinaRoma</span><br>
+            <span>Почта <span class="boldElement">12</span></span>
+        </div>
+    </div>
 </body>
 </html>
