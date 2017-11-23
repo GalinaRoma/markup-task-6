@@ -48,17 +48,19 @@
             Промокод: ja007m
         </section>
         <div class="searching">
-            <a class="horizontalElement blueElement" href="#">Видео</a>
-            <a class="horizontalElement blueElement" href="#">Картинки</a>
-            <a class="horizontalElement blueElement" href="#">Новости</a>
-            <a class="horizontalElement blueElement" href="#">Карты</a>
-            <a class="horizontalElement blueElement" href="#">Маркет</a>
-            <a class="horizontalElement blueElement" href="#">Переводчик</a>
-            <a class="horizontalElement blueElement" href="#">Музыка</a>
-            <a class="horizontalElement blueElement" href="#">ещё</a>
+            <ul>
+                <li class="horizontalElement"><a class="blueElement" href="#">Видео</a></li>
+                <li class="horizontalElement"><a class="blueElement" href="#">Картинки</a></li>
+                <li class="horizontalElement"><a class="blueElement" href="#">Новости</a></li></li>
+                <li class="horizontalElement"><a class="blueElement" href="#">Карты</a></li>
+                <li class="horizontalElement"><a class="blueElement" href="#">Маркет</a></li>
+                <li class="horizontalElement"><a class="blueElement" href="#">Переводчик</a></li>
+                <li class="horizontalElement"><a class="blueElement" href="#">Музыка</a></li>
+                <li class="horizontalElement"><a class="blueElement" href="#">ещё</a></li>
+            </ul>
             <form>
                 <input class="searchBox" type="text" maxlength="400">
-                <input class="searchButton" type="button" value="Найти">
+                <button class="searchButton" value="Найти">Найти</button>
             </form>
             <div>
                 Найдется всё. Например, 
@@ -71,20 +73,22 @@
         <div class="widget1">
             <section class="visited">
                 <h2><a href="#">Посещаемое</a></h2>
-                <div><span class="boldElement">Маркет</span> - китайская распродажа</div>
-                <div><span class="boldElement">Авто.ру</span> - Туссан третьей серии</div>
-                <div><span class="boldElement">Недвижимость</span> - продажа студии</div>
-                <div><span class="boldElement">Работа</span> - программистом</div>
-                <div><span class="boldElement">Здоровье</span> - врач на связи</div>
-                <div><span class="boldElement">Коллекции</span> - как мелировать волосы</div>
-                <div><span class="boldElement">Авиабилеты</span> - из Екатеринбурга</div>
+                <ul>
+                    <li><span class="boldElement">Маркет</span> - китайская распродажа</li>
+                    <li><span class="boldElement">Авто.ру</span> - Туссан третьей серии</li>
+                    <li><span class="boldElement">Недвижимость</span> - продажа студии</li>
+                    <li><span class="boldElement">Работа</span> - программистом</li>
+                    <li><span class="boldElement">Здоровье</span> - врач на связи</li>
+                    <li><span class="boldElement">Коллекции</span> - как мелировать волосы</li>
+                    <li><span class="boldElement">Авиабилеты</span> - из Екатеринбурга</li>
+                </ul>
             </section>
             <section class="jokes">
                 <h2><a href="#">Лучшие анекдоты</a></h2>
                 <div class="joke1">Раздел: <a class="blueElement" href="#">медицинские</a><br>
                 - Вас лечить хорошо или бесплатно?
                 </div>
-                <input type="button" id="moveJoke" value="joke">
+                <button id="moveJoke" value="joke"></button>
                 <label for="moveJoke">
                         <span class="fa fa-repeat blueElement"></span>
                         <a class="blueElement" href="">Показать еще</a>
@@ -96,30 +100,34 @@
                 <h2 class="horizontalElement"><a href="#">Телепрограмма</a></h2>
                 <img class="teleShow horizontalElement widImage" src="img/teleShow.png" 
                     alt="Лого телепрограммы">
-                <div>16:00 Орёл и Решка <span class="elementsGrey">Пятница</span></div>
-                <div>16:30 Ревизорро <span class="elementsGrey">Пятница</span></div>
-                <div>16:30 Реальные пацаны <span class="elementsGrey">ТНТ</span></div>
-                <div>16:30 Новости <span class="elementsGrey">Россия1</span></div>
-                <div>16:30 Финес и Ферб <span class="elementsGrey">Disney</span></div>
+                <ul>
+                    <li>16:00 Орёл и Решка <span class="elementsGrey">Пятница</span></li>
+                    <li>16:30 Ревизорро <span class="elementsGrey">Пятница</span></li>
+                    <li>16:30 Реальные пацаны <span class="elementsGrey">ТНТ</span></li>
+                    <li>16:30 Новости <span class="elementsGrey">Россия1</span></li>
+                    <li>16:30 Финес и Ферб <span class="elementsGrey">Disney</span></li>
+                </ul>
             </section>
             <section class="carNews">
                 <h2><a href="#">Автомобильные новости</a></h2>
                 <div class="carNewsBigWrap">
                     <div class="carNewsWrap">
-                        <div>Прочитать всю историю Corvette 
-                            <span class="elementsGrey">13:00</span></div>
-                        <div>Правительство поддержало законопроект о регистрации машиномест 
-                            <span class="elementsGrey">12:12</span></div>
-                        <div>Обзор нового Mitsubishi, за которым выстроилась очередь
-                            <span class="elementsGrey">12:01</span></div>
-                        <div>Лады оснастят системой управления со смартфона
-                            <span class="elementsGrey">11:40</span></div>
-                        <div>В Китае представили спорткар с двигателем от Focus RS
-                            <span class="elementsGrey">11:30</span></div>
-                        <div>Священник отчитал прихожан, а они заставили его продать Porshe
-                            <span class="elementsGrey">11:09</span></div>
-                        <div>Какие автомобили будут популярны в новом 2018 году
-                            <span class="elementsGrey">11:00</span></div>
+                        <ul>
+                            <li>Прочитать всю историю Corvette 
+                                <span class="elementsGrey">13:00</span></li>
+                            <li>Правительство поддержало законопроект о регистрации машиномест 
+                                <span class="elementsGrey">12:12</span></li>
+                            <li>Обзор нового Mitsubishi, за которым выстроилась очередь
+                                <span class="elementsGrey">12:01</span></li>
+                            <li>Лады оснастят системой управления со смартфона
+                                <span class="elementsGrey">11:40</span></li>
+                            <li>В Китае представили спорткар с двигателем от Focus RS
+                                <span class="elementsGrey">11:30</span></li>
+                            <li>Священник отчитал прихожан, а они заставили его продать Porshe
+                                <span class="elementsGrey">11:09</span></li>
+                            <li>Какие автомобили будут популярны в новом 2018 году
+                                <span class="elementsGrey">11:00</span></li>
+                        </ul>
                     </div>
                 </div>    
             </section>
@@ -150,13 +158,16 @@
             </section>
             <section class="poster">
                 <h2><a href="#">Афиша</a></h2>
-                <div>Здравствуй, папа, Новый год! <span class="elementsGrey">премьера в чт</span>
-                </div>
-                <div>Тор: Рагнарёк <span class="elementsGrey">фэнтези</span></div>
-                <div>Лига справедливости <span class="elementsGrey">фантастика</span></div>
-                <div>Последний богатырь <span class="elementsGrey">приключения</span></div>
-                <div>Убийство в Восточном экспрессе <span class="elementsGrey">драма</span></div>
-                <div class="boldElement">Концерты — Каста</div>
+                <ul>
+                    <li>Здравствуй, папа, Новый год! <span class="elementsGrey">премьера в чт
+                        </span></li>
+                    <li>Тор: Рагнарёк <span class="elementsGrey">фэнтези</span></li>
+                    <li>Лига справедливости <span class="elementsGrey">фантастика</span></li>
+                    <li>Последний богатырь <span class="elementsGrey">приключения</span></li>
+                    <li>Убийство в Восточном экспрессе <span class="elementsGrey">драма
+                        </span></li>
+                    <li class="boldElement">Концерты — Каста</li>
+                </ul>
             </section>
         </div>
         <div class="mail">

@@ -26,15 +26,36 @@ body
     font: 500 13px Arial;
 }
 
+button[id='moveJoke']
+{
+    display: none;
+}
+
+section
+{
+    padding: 0 2px;
+}
+
+.news ul
+{
+    list-style: disc;
+}
+
 ul
 {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 li
 {
     margin-bottom: 10px;
+}
+
+li.horizontalElement
+{
+    margin-bottom: 0;
 }
 
 .schedules
